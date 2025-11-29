@@ -6,6 +6,17 @@ A simple "Hello World" example for controlling an SSD1306 OLED display (128x32, 
 
 ## Overview
 
+### Learning Path Context
+
+This project serves as an accessible introduction to embedded Rust, I2C communication, and hardware debugging before tackling more complex IIoT systems. It's ideal for:
+
+- **Embedded Rust beginners** - gentle introduction with excellent tooling and documentation
+- **IIoT preparation** - foundational skills for STM32, MQTT, OPC-UA, and industrial protocols
+- **Hardware debugging practice** - real-world troubleshooting of I2C buses, power issues, and pin mappings
+- **Display integration** - essential for sensor visualization and HMI development
+
+The patterns learned here (HAL abstractions, peripheral initialization, error handling, protocol debugging) transfer directly to professional embedded and industrial automation projects.
+
 ### About the micro:bit v2
 
 The [BBC micro:bit v2](https://microbit.org/) is an ARM-based embedded development board featuring:
@@ -27,7 +38,7 @@ Rust brings memory safety and zero-cost abstractions to embedded development:
 - **Growing ecosystem** - mature HAL crates for most microcontrollers
 - **Performance** - same speed as C/C++, but safer
 
-The micro:bit has excellent Rust support through the `microbit-v2` crate, making it an ideal platform for learning embedded Rust.
+The micro:bit has excellent Rust support through the `microbit-v2` crate, making it an ideal platform for learning embedded Rust before moving to STM32, ESP32, or industrial-grade microcontrollers.
 
 ### Expansion Boards
 
@@ -63,7 +74,14 @@ This simple OLED "Hello World" serves as a foundation for more complex projects:
 - Create weather stations, motion monitors, or game consoles
 - Build robotics projects with motor controllers
 
-The patterns learned here (I2C communication, display management, error handling) apply directly to more advanced embedded Rust projects.
+**Industrial/IIoT Preparation:**
+
+- Practice I2C debugging and protocol analysis (transferable to Modbus, PROFINET)
+- Learn display-based HMI patterns for SCADA-like interfaces
+- Understand peripheral initialization and error handling
+- Build toward MQTT sensor nodes and OPC-UA integration
+
+The patterns learned here apply directly to more advanced embedded Rust projects, STM32 development, and professional IIoT systems.
 
 ## Hardware Requirements
 
