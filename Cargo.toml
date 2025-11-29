@@ -1,0 +1,20 @@
+# ============================================
+# Cargo.toml
+# ============================================
+[package]
+name = "microbit-oled"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cortex-m = "0.7"
+cortex-m-rt = { version = "0.7", features = ["device"] }
+panic-halt = "0.2"
+microbit-v2 = "0.13"
+ssd1306 = "0.8"
+embedded-graphics = "0.8"
+
+[profile.release]
+codegen-units = 1
+debug = true
+lto = true
